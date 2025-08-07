@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歴史上の人物との対話</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- パーティクル背景 -->
+  <div class="particles" id="particles"></div>
+  
+  <div class="container">
+    <h1 class="title">歴史上の人物との対話</h1>
+
+    <div class="character-selection">
+      <div class="character-card" data-character="michizane">
+        <div class="character-icon">📚</div>
+        <div class="character-name">菅原道真</div>
+        <div class="character-period">845-903</div>
+      </div>
+      <div class="character-card" data-character="leonardo">
+        <div class="character-icon">🎨</div>
+        <div class="character-name">レオナルド・ダ・ヴィンチ</div>
+        <div class="character-period">1452-1519</div>
+      </div>
+      <div class="character-card" data-character="xavier">
+        <div class="character-icon">⛪️</div>
+        <div class="character-name">フランシスコ・ザビエル</div>
+        <div class="character-period">1506-1552</div>
+      </div>
+      <div class="character-card" data-character="nobunaga">
+        <div class="character-icon">🏰</div>
+        <div class="character-name">織田信長</div>
+        <div class="character-period">1534-1582</div>
+      </div>
+      <div class="character-card" data-character="hokusai">
+        <div class="character-icon">🌊</div>
+        <div class="character-name">葛飾北斎</div>
+        <div class="character-period">1760-1849</div>
+      </div>
+      <div class="character-card" data-character="ryoma">
+        <div class="character-icon">⚔️</div>
+        <div class="character-name">坂本龍馬</div>
+        <div class="character-period">1836-1867</div>
+      </div>
+      <div class="character-card" data-character="edison">
+        <div class="character-icon">💡</div>
+        <div class="character-name">トーマス・エジソン</div>
+        <div class="character-period">1847-1931</div>
+      </div>
+      <div class="character-card" data-character="einstein">
+        <div class="character-icon">🧮</div>
+        <div class="character-name">アインシュタイン</div>
+        <div class="character-period">1879-1955</div>
+      </div>
+      <div class="character-card" data-character="picasso">
+        <div class="character-icon">🎭</div>
+        <div class="character-name">パブロ・ピカソ</div>
+        <div class="character-period">1881-1973</div>
+      </div>
+    </div>
+
+    <div class="chat-container" id="chatContainer">
+      <div class="message ai-message">
+        こんにちは！まず上から話したい歴史上の人物を選んでください。その人物になりきって対話いたします。
+      </div>
+    </div>
+
+    <div class="typing-indicator" id="typingIndicator">
+      <div class="typing-dot"></div>
+      <div class="typing-dot"></div>
+      <div class="typing-dot"></div>
+      <span>考え中...</span>
+    </div>
+
+    <div class="input-section">
+      <input type="text" class="message-input" id="messageInput" placeholder="メッセージを入力してください..." disabled>
+      <button class="send-button" id="sendButton" disabled>送信</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
